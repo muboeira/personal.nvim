@@ -142,8 +142,13 @@ return {
         --    https://github.com/pmizio/typescript-tools.nvim
         --
         -- But for many setups, the LSP (`tsserver`) will work just fine
-        -- tsserver = {},
+        tsserver = {
+          filetypes = { 'typescript', 'typescriptreact', 'typescript.tsx' },
+        },
         --
+        biome = {
+          filetypes = { 'javascript', 'javascriptreact', 'json', 'jsonc', 'javascript.jsx' },
+        },
 
         lua_ls = {
           -- cmd = {...},
